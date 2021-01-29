@@ -47,6 +47,6 @@ app.post("/api/v1",(req,res)=>{
       });
 })
 
-app.listen(process.env.APP_PORT||3000,()=>{
-    console.log("Server is running on",process.env.APP_PORT||3000)
+app.listen(3000,()=>{
+    console.log("Server is running on 3000")
 })
