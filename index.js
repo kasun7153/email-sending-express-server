@@ -47,6 +47,6 @@ app.post("/api/v1",(req,res)=>{
       });
 })
 
-app.listen(3000,()=>{
-    console.log("Server is running on 3000")
+app.listen(process.env.PORT || 3000,()=>{
+    console.log('Express server listening on port %d', process.env.PORT);
 })
