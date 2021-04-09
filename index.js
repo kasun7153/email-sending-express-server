@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const app = express();
 app.use(express.json());
 app.use(cors())
-app.use(bodyParser.json({ type: 'application/*+json' }));
+app.use(bodyParser.json());
 
 
 const  transporter = nodemailer.createTransport({
@@ -15,9 +15,10 @@ const  transporter = nodemailer.createTransport({
     secure: true, 
     auth: {
       user: "app.nodemailer@gmail.com", 
-      pass: "Nodemailer123", 
+      pass: "cxuojrtysoeplkpc", 
     },
   })
+
   app.get("/",(req,res)=>{
       res.send("Email sending Node server by Me")
 })
