@@ -20,7 +20,7 @@ const  transporter = nodemailer.createTransport({
   });
 
   app.get("/",(req,res)=>{
-      res.send("Email sending Node server by Kasun")
+      res.send("Email sending Node server by Me")
 })
 
 app.post("/api/v1",(req,res)=>{
