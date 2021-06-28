@@ -14,8 +14,8 @@ const  transporter = nodemailer.createTransport({
     port: 465,
     secure: true, 
     auth: {
-      user: "app.nodemailer@gmail.com", 
-      pass: "cxuojrtysoeplkpc", 
+      user: "email", 
+      pass: "password", 
     },
   })
 
@@ -27,7 +27,7 @@ app.post("/api/v1",(req,res)=>{
     console.log(req.body)
 
     transporter.sendMail({
-        from: req.body.from+"<app.nodemailer@gmail.com>", 
+        from: req.body.from+"<reciver email>", 
         to: req.body.to,
         subject: req.body.subject, 
         html: req.body.html
